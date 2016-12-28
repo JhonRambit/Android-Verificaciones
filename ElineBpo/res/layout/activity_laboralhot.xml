@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >   
+    
+    <LinearLayout
+        android:id="@+id/LinerLayoutDomicilio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+       
+        <ImageView
+            android:id="@+id/imgRegLHlogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/logo_eline" />
+
+        <TextView
+            android:id="@+id/lblRegLHDatoGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblModuloVerificacionDatosGenerales"
+            android:textColor="#4B0082"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+   		<TextView
+   		    android:id="@+id/lblRegLHNroSolicitudGeneral"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:text="@string/lblModuloVerificacionNroSolicitud" />
+
+        <EditText
+            android:id="@+id/txtRegLHNrosolicitudGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+			android:inputType="textCapSentences" />
+        
+        <requestFocus />
+        
+        <TextView
+            android:id="@+id/lblRegLHEntidadGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionEntidad" />
+
+        <EditText
+            android:id="@+id/txtRegLHEntidadGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHTitularGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionTitular" />
+
+        <EditText
+            android:id="@+id/txtRegLHTitularGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHDireccionGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionDireccion" />
+
+        <EditText
+            android:id="@+id/txtRegLHDireccionGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHDistritoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionDistrito" />
+
+        <EditText
+            android:id="@+id/txtRegLHDistritoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHProvinciaGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionProvincia" />
+
+        <EditText
+            android:id="@+id/txtRegLHProvinciaGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHDepartamentoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionDepartamento" />
+
+        <EditText
+            android:id="@+id/txtRegLHDepartamentoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHObservacionesGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionObservacionGeneral" />
+
+        <EditText
+            android:id="@+id/txtRegLHObservacionesGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+         <TextView
+             android:id="@+id/lblRegLHFechaIngresoGeneral"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/lblModuloVerificacionFechaIngreso" />
+
+        <EditText
+            android:id="@+id/txtRegLHFechaIngresoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegLHDatoVerificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lblModuloVerificacionDatosVerificacion"
+            android:textColor="#4B0082"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+         <TextView
+             android:id="@+id/lblRegLHTipoFormato"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/lblModuloVerificacionTipoFormato" />
+
+         <EditText
+             android:id="@+id/txtRegLHTipoFormato"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:textStyle="bold" />
+
+			  <TextView
+			      android:id="@+id/lblRegLHVisitas"
+			      android:layout_width="wrap_content"
+			      android:layout_height="wrap_content"
+			      android:text="@string/lblModuloVerificacionResultado" />
+
+        <Spinner 
+            android:id="@+id/listaRegLHVisitas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/lblVisita1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionVisita1" />
+
+		
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+              <Button
+                  android:id="@+id/btnRegLHPrimeraFecha"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_calendario"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:text="@string/lblModuloVerificacionFecha1"
+                  android:textColor="#4B0082"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegLHPrimeraFecha"
+                  android:layout_width="120dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" >
+              </EditText>
+
+              <Button
+                  android:id="@+id/btnRegLHLimpiarPrimeraFecha"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif"
+                  android:drawableLeft="@drawable/ic_limpiar" />
+          </LinearLayout>
+			
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+              
+              <Button
+                  android:id="@+id/btnRegLHPrimeraHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_reloj"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:text="@string/lblModuloVerificacionHora1"
+                  android:textColor="#4B0082"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegLHPrimeraHora"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" />
+
+              <Button
+                  android:id="@+id/btnRegLHLimpiarPrimeraHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_limpiar"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif" />
+              </LinearLayout>
+              
+          <TextView
+              android:id="@+id/lblVisita2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lblModuloVerificacionVisita2" />
+		
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+              
+             <Button
+                 android:id="@+id/btnRegLHSegundaFecha"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="#FFFFFF"
+                 android:drawableLeft="@drawable/ic_calendario"
+                 android:shadowColor="#FF8800"
+                 android:shadowDx="1"
+                 android:shadowDy="2"
+                 android:shadowRadius="1.5"
+                 android:text="@string/lblModuloVerificacionFecha2"
+                 android:textColor="#4B0082"
+                 android:textSize="16dp"
+                 android:textStyle="bold"
+                 android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegLHSegundaFecha"
+                  android:layout_width="120dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" >
+              </EditText>
+
+              <Button
+                  android:id="@+id/btnRegLHLimpiarSegundaFecha"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif"
+                  android:drawableLeft="@drawable/ic_limpiar" />
+          </LinearLayout>
+			
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+              
+              <Button
+                  android:id="@+id/btnRegLHSegundaHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_reloj"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:text="@string/lblModuloVerificacionHora2"
+                  android:textColor="#4B0082"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegLHSegundaHora"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" />
+
+              <Button
+                  android:id="@+id/btnRegLHLimpiarSegundaHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_limpiar"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif" />
+              </LinearLayout>
+              
+            <TextView
+                android:id="@+id/lblRegLHNombreInformante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblModuloVerificacionInformante" />
+
+        	  <EditText
+        	      android:id="@+id/txtRegLHNombreInformante"
+        	      android:layout_width="fill_parent"
+        	      android:layout_height="wrap_content"
+        	      android:inputType="textCapCharacters|textNoSuggestions" />
+        	  
+        	    <TextView
+        	        android:id="@+id/lblRegLHTipDocInformante"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="@string/lblModuloVerificacionDocInformante" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+        	   
+        	  <Spinner 
+            	  android:id="@+id/listaRegLHTipoDocInformante"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 				
+        	  <TextView
+        	      android:id="@+id/lblRegLHMostroDocInformante"
+        	      android:layout_width="wrap_content"
+        	      android:layout_height="wrap_content"
+        	      android:text="@string/lblModuloVerificacionMostroDoc" />
+        	
+           <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+
+        	       <Spinner 
+            	   android:id="@+id/listaRegLHMostroInformante"
+            	   android:layout_width="130dp"
+            	   android:layout_height="38dp" />
+        	       
+        	       <TextView
+        	           android:id="@+id/lblRegLHNroInformante"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:text="@string/lblModuloVerificacionNroDoc" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegLHNroInformante"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="number" />
+ 		    </LinearLayout>
+
+        	       <TextView
+        	           android:id="@+id/lblRegLHCargoInformante"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:text="@string/lblModuloVerificacionCargoInformante" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegLHCargoInformante"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	       
+        	        <TextView
+        	            android:id="@+id/lblRegLHPerfilLaboral"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionPerfilLabora" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+        	   
+        	  <Spinner 
+            	  android:id="@+id/listaRegLHPerfilLaboral"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 		   
+           <TextView
+               android:id="@+id/lblRegLHSituacionLaboral"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/lblModuloVerificacionSituacionLaboral" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+        	   
+        	  <Spinner 
+            	  android:id="@+id/listaRegLHSituacionLaboral"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 		   
+           <TextView
+               android:id="@+id/lblRegLHIngresoMensual"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/lblModuloVerificacionIngresoMensual" />
+        	    
+        	 <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+    
+        	   		<Spinner 
+            	    android:id="@+id/listaRegLHIngresoMensual"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	   
+    				<EditText
+        	        android:id="@+id/txtRegLHIngresoMensual"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02" 
+        	        android:ems="10"
+        	        android:inputType="number" />
+    		 </LinearLayout>    
+    		 
+        	  <TextView
+        	      android:id="@+id/lblRegLHIndependiente"
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content"
+        	      android:text="@string/lblModuloVerificacionIndependiente"
+        	      android:textColor="#4B0082"
+        	      android:textSize="15sp"
+        	      android:textStyle="bold" />
+	      
+        	     <TextView
+        	         android:id="@+id/lblRegLHPuestoFijo"
+        	         android:layout_width="fill_parent"
+        	         android:layout_height="wrap_content"
+        	         android:text="@string/lblModuloVerificacionPuestoFijo" />
+        	    
+        	 <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+    
+        	   		<Spinner 
+            	    android:id="@+id/listaRegLHPuestoFijo"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	   
+    				<EditText
+        	        android:id="@+id/txtRegLHPuestoFijo"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02" 
+        	        android:ems="10"
+        	        android:inputType="number" />
+    		 </LinearLayout> 
+    		 
+        	     <TextView
+        	         android:id="@+id/lblRegLHSinPuestoFijo"
+        	         android:layout_width="fill_parent"
+        	         android:layout_height="wrap_content"
+        	         android:text="@string/lblModuloVerificacionSinPuestoFijo" />
+        	    
+        	 <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+    
+        	   		<Spinner 
+            	    android:id="@+id/listaRegLHSinPuestoFijo"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	   
+    				<EditText
+        	        android:id="@+id/txtRegLHSinPuestoFijo"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02" 
+        	        android:ems="10"
+        	        android:inputType="number" />
+    		 </LinearLayout> 
+    		 
+        	 <TextView
+        	     android:id="@+id/lblRegLHConNegocio"
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionConNegocio"
+        	     android:textColor="#4B0082"
+        	     android:textSize="15sp"
+        	     android:textStyle="bold" />
+
+        	  <TextView
+        	      android:id="@+id/lblRegLHConActivo"
+        	      android:layout_width="wrap_content"
+        	      android:layout_height="wrap_content"
+        	      android:text="@string/lblModuloVerificacionConActivoFijo" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+        	   
+        	  <Spinner 
+            	  android:id="@+id/listaRegLHConActivo"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 		   
+           <TextView
+               android:id="@+id/lblRegLHActivoFijo"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/lblModuloVerificacionActivoFijo" />
+        	    
+        	 <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+    
+        	   		<Spinner 
+            	    android:id="@+id/listaRegLHActivoFijo"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	   
+    				<EditText
+        	        android:id="@+id/txtRegLHActivoFijo"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02" 
+        	        android:ems="10"
+        	        android:inputType="number" />
+    		 </LinearLayout> 
+    		 
+        	 <TextView
+        	     android:id="@+id/lblRegLHDependienteIndependiente"
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionDependienteIndependienteFormal"
+        	     android:textColor="#4B0082"
+        	     android:textSize="15sp"
+        	     android:textStyle="bold" />
+        	 
+        	   <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	        <TextView
+        	            android:id="@+id/lblRegLHRucCentroLaboral"
+        	            android:layout_width="200dp"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionRucCentroLaboral" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegLHRucCentroLaboral"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	    <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	   		
+        	          <TextView
+        	              android:id="@+id/lblRegLHCargoActividad"
+        	              android:layout_width="200dp"
+        	              android:layout_height="wrap_content"
+        	              android:text="@string/lblModuloVerificacionCargoActividadOficio" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegLHCargoActividad"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	        </LinearLayout>
+        	        
+        	    <TextView
+        	        android:id="@+id/lblRegLHFechaInicioActividad1"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:text="@string/lblModuloVerificacionFechaInicio" />
+        	    
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+    
+        	       	<TextView
+        	       	    android:id="@+id/lblRegLHAnoMesDia1"
+        	       	    android:layout_width="wrap_content"
+        	       	    android:layout_height="wrap_content"
+        	       	    android:text="@string/lblModuloVerificacionAnoMesDia" />
+        	        
+        	        <EditText
+        	        android:id="@+id/txtRegLHAno1"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	          
+        	        <EditText
+        	        android:id="@+id/txtRegLHMes1"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	             	     
+        	        <EditText
+        	        android:id="@+id/txtRegLHDia1"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	 <TextView
+        	     android:id="@+id/lblRegLHIndependienteRecibo"
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionIndependienteReciboHonorario"
+        	     android:textColor="#4B0082"
+        	     android:textSize="15sp"
+        	     android:textStyle="bold" />
+        	 
+        	   <TextView
+        	       android:id="@+id/lblRegLHLicenciaFuncionamiento"
+        	       android:layout_width="wrap_content"
+        	       android:layout_height="wrap_content"
+        	       android:text="@string/lblModuloVerificacionLicenciaFuncionamiento" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+
+              <Spinner
+                  android:id="@+id/listaRegLHLicenciaFuncionamiento"
+                  android:layout_width="fill_parent"
+                  android:layout_height="38dp" />
+
+ 		   </LinearLayout>
+ 		   
+           <TextView
+               android:id="@+id/lblRegLHLocalPropio"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/lblModuloVerificacionLocalPropio" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+        	   
+        	  <Spinner 
+            	  android:id="@+id/listaRegLHLocalPropio"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 		   
+          <TextView
+              android:id="@+id/lblRegLHRegimenTributario"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/lblModuloVerificacionRegimenTributario" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+
+              <Spinner
+                  android:id="@+id/listaRegLHRegimenTributario"
+                  android:layout_width="fill_parent"
+                  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 		   
+            <TextView
+                android:id="@+id/lblRegLHTipoLocal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblModuloVerificacionTipoLocal" />
+        	    
+        	 <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+    
+        	   		<Spinner 
+            	    android:id="@+id/listaRegLHTipoLocal"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	   
+    				<EditText
+        	        android:id="@+id/txtRegLHTipoLocal"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02" 
+        	        android:ems="10"
+        	        android:inputType="number" />
+    		 </LinearLayout>   
+    		 
+        	 <TextView
+        	     android:id="@+id/lblRegLHIndependienteInformal"
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionIndependienteInformal"
+        	     android:textColor="#4B0082"
+        	     android:textSize="15sp"
+        	     android:textStyle="bold" />
+    		 
+        	   <TextView
+        	       android:id="@+id/lblRegLHActividadOficio"
+        	       android:layout_width="wrap_content"
+        	       android:layout_height="wrap_content"
+        	       android:text="@string/lblModuloVerificacionActividadOficio" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegLHActividadOficio"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	       
+        	    <TextView
+        	        android:id="@+id/lblRegLHFechaInicioActividad2"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:text="@string/lblModuloVerificacionFechaInicio" />
+        	    
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+    
+        	       	<TextView
+        	       	    android:id="@+id/lblRegLHAnoMesDia2"
+        	       	    android:layout_width="wrap_content"
+        	       	    android:layout_height="wrap_content"
+        	       	    android:text="@string/lblModuloVerificacionAnoMesDia" />
+        	        
+        	        <EditText
+        	        android:id="@+id/txtRegLHAno2"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	          
+        	        <EditText
+        	        android:id="@+id/txtRegLHMes2"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	             	     
+        	        <EditText
+        	        android:id="@+id/txtRegLHDia2"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	    <TextView
+        	        android:id="@+id/lblRegLHDireccionDesarrolla"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:text="@string/lblModuloVerificacionDireccionDesarrolla" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegLHDireccionDesarrolla"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	       
+        	         <TextView
+        	             android:id="@+id/lblRegLHDireccionObservado"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="@string/lblModuloVerificacionDescripcionObservado" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegLHDireccionObservado"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	       
+        	        <TextView
+        	            android:id="@+id/lblRegLHObservaciones"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionObservaciones" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegLHObservaciones"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	       
+        	      
+        	       	<Button
+    	       		android:id="@+id/btnRegLHRutaFoto"
+    	       		android:layout_width="wrap_content"
+    	       		android:layout_height="wrap_content"
+    	       		android:layout_marginTop="26dp"
+    	       		android:background="#FFFFFF"
+    	       		android:drawableLeft="@drawable/ic_foto"
+    	       		android:paddingLeft="20dip"
+    	       		android:paddingRight="20dip"
+      	       		android:shadowColor="#FF8800"
+      	       		android:shadowDx="1"
+      	       		android:shadowDy="2"
+      	       		android:shadowRadius="1.5"
+      	       		android:text="@string/lblModuloVerificacionPrimeraFoto"
+      	       		android:textColor="#4B0082"
+      	       		android:textStyle="bold"
+      	       		android:typeface="serif" 
+      	       		android:layout_gravity="center"/>
+
+        	        <ImageView
+        	        android:id="@+id/imageViewRegLHPrimeraFoto"
+        	        android:layout_width="350dp"
+        	        android:layout_height="420dp"
+        	        android:maxHeight="@dimen/activity_horizontal_margin"
+        	        android:maxWidth="@dimen/activity_horizontal_margin"
+        	        android:layout_gravity="center"
+        	        android:scaleType="fitXY" />
+        	       
+        	 		<Button
+        	      	android:id="@+id/btnRegLHRutaFoto2"
+        	     	android:layout_width="wrap_content"
+        	     	android:layout_height="wrap_content"
+        	        android:layout_marginTop="26dp"
+        	        android:background="#FFFFFF"
+        	        android:drawableLeft="@drawable/ic_foto"
+        	        android:paddingLeft="20dip"
+        	        android:paddingRight="20dip"
+        	        android:shadowColor="#FF8800"
+        	        android:shadowDx="1"
+        	        android:shadowDy="2"
+        	        android:shadowRadius="1.5"
+        	        android:text="@string/lblModuloVerificacionSegundaFoto"
+        	        android:textColor="#4B0082"
+        	        android:textStyle="bold"
+        	        android:typeface="serif"
+        	        android:layout_gravity="center" />
+
+        	      	<ImageView
+        	        android:id="@+id/imageViewRegLHSegundaFoto"
+        	        android:layout_width="350dp"
+        	        android:layout_height="420dp"
+        	        android:maxHeight="@dimen/activity_horizontal_margin"
+        	        android:maxWidth="@dimen/activity_horizontal_margin"
+        	        android:layout_gravity="center"
+        	        android:scaleType="fitXY" />
+        	      	
+        	      	<Button
+        	     	android:id="@+id/btnRegLHGuardar"
+        	     	android:layout_width="wrap_content"
+        	   	 	android:layout_height="wrap_content"
+        	     	android:layout_marginTop="26dp"
+        	     	android:background="#FFFFFF"
+        	     	android:drawableLeft="@drawable/ic_guardar"
+        	     	android:paddingLeft="20dip"
+        	     	android:paddingRight="20dip"
+        	     	android:shadowColor="#FF8800"
+        	     	android:shadowDx="1"
+        	     	android:shadowDy="2"
+        	     	android:shadowRadius="1.5"
+        	     	android:text="@string/lblModuloVerificacionGuardar"
+        	     	android:textColor="#4B0082"
+        	     	android:textStyle="bold"
+        	     	android:typeface="serif"
+        	     	android:layout_gravity="left" />
+        	   
+        	  		<Button
+        	     	android:id="@+id/btnRegLHRegresa"
+        	     	android:layout_width="wrap_content"
+        	     	android:layout_height="wrap_content"
+        	    	android:layout_marginTop="26dp"
+        	     	android:background="#FFFFFF"
+        	     	android:drawableLeft="@drawable/ic_salir5"
+        	     	android:paddingLeft="20dip"
+        	     	android:paddingRight="20dip"
+	        	    android:shadowColor="#FF8800"
+	        	    android:shadowDx="1"
+        	     	android:shadowDy="2"
+        	     	android:shadowRadius="1.5"
+        	     	android:text="@string/lblModuloVerificacionRegresar"
+        	     	android:textColor="#4B0082"
+        	     	android:textStyle="bold"
+        	     	android:typeface="serif"
+        	     	android:layout_gravity="left" />  
+        </LinearLayout>
+        </ScrollView>
+        

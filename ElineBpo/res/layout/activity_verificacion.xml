@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	 	<ImageView
+            android:id="@+id/ImgLogoVeri"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/logo_eline" />
+
+    	<TextView
+    	    android:id="@+id/lblTituloBienvenido"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center"
+    	    android:text="@string/lblModuloVerificacion"
+    	    android:textColor="#4B0082"
+    	    android:textStyle="bold" />
+
+    <TableRow >
+        <TextView
+            android:id="@+id/lblNroSolicitud"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionNroSolicitud"
+            android:textColor="#4B0082"
+            android:textStyle="bold" />
+
+	    <Button
+	        android:id="@+id/btnBuscarV"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#FFFFFF"
+	        android:drawableLeft="@drawable/ic_buscar"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip"
+	        android:shadowColor="#FF8800"
+	        android:shadowDx="1"
+	        android:shadowDy="2"
+	        android:shadowRadius="1.5"
+	        android:text="@string/lblModuloVerificacionBuscar"
+	        android:textColor="#4B0082"
+	        android:textStyle="bold"
+	        android:typeface="serif"
+	        android:visibility="invisible" />
+    </TableRow>
+	
+    <TableRow>
+        <EditText 
+            android:id="@+id/txtVerinroSolicitud"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnProcesar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/ic_aceptar"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:shadowColor="#FF8800"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="1.5"
+            android:text="@string/lblModuloVerificacionAceptar"
+            android:textColor="#4B0082"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </TableRow>
+    
+
+	    <EditText
+	        android:id="@+id/txtAsignadas"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	    </EditText> 
+
+	
+	<TableRow >	    <TextView
+	        android:id="@+id/lblVeriTituloNroSolicitud"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#4B0082"
+	        android:text="@string/lblModuloVerificacionTituloTabla"
+	        android:textColor="#FFFFFF"
+	        android:textStyle="bold" />
+
+	    <TextView
+	        android:id="@+id/txtformato"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#4B0082"
+	        android:text="@string/lblModuloVerificacionTituloFormato"
+	        android:textColor="#FFFFFF"
+	        android:textStyle="bold" />
+
+	</TableRow>
+	
+	<TableRow >
+		<GridView
+		    android:id="@+id/dgvVerificacion"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_span="3"
+		    android:background="#DA70D6"
+		    android:columnWidth="60dp"
+		    android:horizontalSpacing="1dp"
+		    android:numColumns="2"
+		    android:stretchMode="columnWidth"
+		    android:verticalSpacing="1dp"
+		    android:visibility="visible" >
+		</GridView>
+	</TableRow>
+</TableLayout>

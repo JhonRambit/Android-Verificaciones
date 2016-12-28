@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+        android:id="@+id/lblUsuarioFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#4B0082"
+        android:visibility="invisible" />
+        
+        <ImageView
+            android:id="@+id/RegFotoLogo"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_marginTop="27dp"
+            android:layout_weight="5.60"
+            android:src="@drawable/logo_eline" />
+        
+         <TextView
+             android:id="@+id/lblTituloFoto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="@string/lblModuloFoto"
+             android:textColor="#4B0082"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+         	<TextView
+     	    android:id="@+id/lblNroSolicitud"
+     	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+     	    android:text="@string/lblModuloFotoNroSolicitud" />
+      
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/txtNroSolicitud"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textStyle="bold" >
+
+                <requestFocus />
+            </EditText>
+            
+            <Button
+                android:id="@+id/btnBuscaNroSolicitud"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_buscar"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:shadowColor="#FF8800"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1.5"
+                android:text="@string/lblModuloFotoBuscarNro"
+                android:textColor="#4B0082"
+                android:textStyle="bold"
+                android:typeface="serif" />
+ 
+      </LinearLayout>
+      
+        <TextView
+            android:id="@+id/lblTitular"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloFotoTitular" />
+        
+        <EditText
+        	 android:id="@+id/txtTitular"
+        	 android:layout_width="fill_parent"
+        	 android:layout_height="wrap_content"
+             android:textStyle="bold"
+        	 android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/lblRazonSocial"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloFotoRazonSocial" />
+        
+        <EditText
+        	 android:id="@+id/txtRazonSocial"
+        	 android:layout_width="fill_parent"
+        	 android:layout_height="wrap_content"
+             android:textStyle="bold"
+        	 android:inputType="number" />
+        
+           <TextView
+               android:id="@+id/lblTipoFormato"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/lblModuloFotoFormato" />
+        
+        <EditText
+        	 android:id="@+id/txtFormato"
+        	 android:layout_width="fill_parent"
+        	 android:layout_height="wrap_content"
+             android:textStyle="bold"
+        	 android:inputType="number" />
+        
+       
+        <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+            
+        <TextView
+            android:id="@+id/lblLatitudX"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloFotoLatitud" />
+        
+        <TextView
+            android:id="@+id/lblLongitudY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloFotoLongitud" />
+        </LinearLayout>
+         
+        <TextView
+            android:id="@+id/lblMensajeRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lblModuloFotoMensaje"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+              
+        <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+        	 
+          	<TextView
+          	    android:id="@+id/lblPrimera"
+          	    android:layout_width="wrap_content"
+          	    android:layout_height="wrap_content"
+          	    android:layout_gravity="center_vertical"
+          	    android:text="@string/lblModuloFotoPrimera"
+          	    android:textColor="#4B0082"
+          	    android:textSize="17sp"
+          	    android:textStyle="bold" />
+          
+          	<ImageButton
+          	android:id="@+id/foto1"
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:layout_marginTop="24dp"
+         	android:drawableLeft="@drawable/ic_foto"
+          	android:cropToPadding="true"
+          	android:src="@drawable/ic_foto"
+          	android:background="#FFFFFF" />
+      </LinearLayout>
+      
+      <ImageView
+            android:id="@+id/img1"
+            android:layout_width="350dp"
+            android:layout_height="420dp"
+            android:maxHeight="@dimen/activity_horizontal_margin"
+            android:maxWidth="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY" />
+   
+      <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+              >
+        	 
+          	<TextView
+          	    android:id="@+id/lblSegunda"
+          	    android:layout_width="wrap_content"
+          	    android:layout_height="wrap_content"
+          	    android:layout_gravity="center_vertical"
+          	    android:text="@string/lblModuloFotoSegunda"
+          	    android:textColor="#4B0082"
+          	    android:textSize="17sp"
+          	    android:textStyle="bold" />
+          
+          	<ImageButton
+          	android:id="@+id/foto2"
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:layout_marginTop="24dp"
+         	android:drawableLeft="@drawable/ic_foto"
+          	android:cropToPadding="true"
+          	android:src="@drawable/ic_foto"
+          	android:background="#FFFFFF" />    
+      </LinearLayout>
+      
+     
+      
+      <ImageView
+            android:id="@+id/img2"
+            android:layout_width="350dp"
+            android:layout_height="420dp"
+            android:maxHeight="@dimen/activity_horizontal_margin"
+            android:maxWidth="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY" />
+      
+       <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+        	 
+          	<TextView
+          	    android:id="@+id/lblTercero"
+          	    android:layout_width="wrap_content"
+          	    android:layout_height="wrap_content"
+          	    android:layout_gravity="center_vertical"
+          	    android:text="@string/lblModuloFotoTercero"
+          	    android:textColor="#4B0082"
+          	    android:textSize="17sp"
+          	    android:textStyle="bold" />
+          
+          	<ImageButton
+          	android:id="@+id/foto3"
+          	android:layout_width="fill_parent"
+          	android:layout_height="wrap_content"
+          	android:layout_marginTop="24dp"
+         	android:drawableLeft="@drawable/ic_foto"
+          	android:cropToPadding="true"
+          	android:src="@drawable/ic_foto"
+          	android:background="#FFFFFF" />    
+      </LinearLayout>
+      
+      <ImageView
+            android:id="@+id/img3"
+            android:layout_width="350dp"
+            android:layout_height="420dp"
+            android:maxHeight="@dimen/activity_horizontal_margin"
+            android:maxWidth="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+</ScrollView>

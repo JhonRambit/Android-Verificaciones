@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >   
+    
+    <LinearLayout
+        android:id="@+id/LinerLayoutDomicilio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+       
+        <ImageView
+            android:id="@+id/imgRegEMlogo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/logo_eline" />
+
+        <TextView
+    	    android:id="@+id/lblRegEMDatoGeneral"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center"
+    	    android:text="@string/lblModuloVerificacionDatosGenerales"
+    	    android:textColor="#4B0082"
+    	    android:textSize="20sp"
+    	    android:textStyle="bold" />
+
+   		<TextView
+   		    android:id="@+id/lblRegEMNroSolicitudGeneral"
+   		    android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+   		    android:text="@string/lblModuloVerificacionNroSolicitud" />
+
+        <EditText
+            android:id="@+id/txtRegEMNrosolicitudGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+			android:inputType="textCapSentences" />
+        
+        <requestFocus />
+        
+        <TextView
+            android:id="@+id/lblRegEMEntidadGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionEntidad" />
+
+        <EditText
+            android:id="@+id/txtRegEMEntidadGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegEMTitularGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionTitular" />
+
+        <EditText
+            android:id="@+id/txtRegEMTitularGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegEMDireccionGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionDireccion" />
+
+        <EditText
+            android:id="@+id/txtRegEMDireccionGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegEMDistritoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionDistrito" />
+
+        <EditText
+            android:id="@+id/txtRegEMDistritoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegEMProvinciaGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionProvincia" />
+
+        <EditText
+            android:id="@+id/txtRegEMProvinciaGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegEMDepartamentoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionDepartamento" />
+
+        <EditText
+            android:id="@+id/txtRegEMDepartamentoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/lblRegEMObservacionesGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionObservacionGeneral" />
+
+        <EditText
+            android:id="@+id/txtRegEMObservacionesGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+         <TextView
+             android:id="@+id/lblRegEMFechaIngresoGeneral"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/lblModuloVerificacionFechaIngreso" />
+
+        <EditText
+            android:id="@+id/txtRegEMFechaIngresoGeneral"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+         <TextView
+             android:id="@+id/lblRegEMDatoVerificacion"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="@string/lblModuloVerificacionDatosVerificacion"
+             android:textColor="#4B0082"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+               
+          <TextView
+              android:id="@+id/lblRegEMTipoFormato"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/lblModuloVerificacionTipoFormato" />
+
+        <EditText
+            android:id="@+id/txtRegEMTipoFormato"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+        
+             <TextView
+                 android:id="@+id/lblRegEMVisitas"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lblModuloVerificacionResultado" />
+
+        <Spinner 
+            android:id="@+id/listaRegEMVisitas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/lblRegEMVisita1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblModuloVerificacionVisita1" />
+        
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+              
+             <Button
+                 android:id="@+id/btnRegEMPrimeraFecha"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="#FFFFFF"
+                 android:drawableLeft="@drawable/ic_calendario"
+                 android:shadowColor="#FF8800"
+                 android:shadowDx="1"
+                 android:shadowDy="2"
+                 android:shadowRadius="1.5"
+                 android:text="@string/lblModuloVerificacionFecha1"
+                 android:textColor="#4B0082"
+                 android:textSize="16sp"
+                 android:textStyle="bold"
+                 android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegEMPrimeraFecha"
+                  android:layout_width="120dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" >
+              </EditText>
+
+              <Button
+                  android:id="@+id/btnRegEMLimpiarPrimeraFecha"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_limpiar"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif" />
+          </LinearLayout>
+          
+         <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+              
+              <Button
+                  android:id="@+id/btnRegEMPrimeraHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_reloj"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:text="@string/lblModuloVerificacionHora1"
+                  android:textColor="#4B0082"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegEMPrimeraHora"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" />
+
+              <Button
+                  android:id="@+id/btnRegEMLimpiarPrimeraHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_limpiar"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif" />
+              </LinearLayout>
+              
+          <TextView
+              android:id="@+id/lblRegEMVisita2"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/lblModuloVerificacionVisita2" />
+	          
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+              <Button
+                  android:id="@+id/btnRegEMSegundaFecha"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_calendario"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:text="@string/lblModuloVerificacionFecha2"
+                  android:textColor="#4B0082"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  android:typeface="serif" />
+
+              <EditText
+                  android:id="@+id/txtRegEMSegundaFecha"
+                  android:layout_width="120dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" >
+              </EditText>
+
+              <Button
+                  android:id="@+id/btnRegEMLimpiarSegundaFecha"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_limpiar"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+              
+              <Button
+                  android:id="@+id/btnRegEMSegundaHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_reloj"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:text="@string/lblModuloVerificacionHora2"
+                  android:textColor="#4B0082"
+                  android:textSize="16sp"
+                  android:textStyle="bold"
+                  android:typeface="serif" />
+              
+              <EditText
+                  android:id="@+id/txtRegEMSegundaHora"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:ems="10" />
+              <Button
+                  android:id="@+id/btnRegEMLimpiarSegundaHora"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="#FFFFFF"
+                  android:drawableLeft="@drawable/ic_limpiar"
+                  android:shadowColor="#FF8800"
+                  android:shadowDx="1"
+                  android:shadowDy="2"
+                  android:shadowRadius="1.5"
+                  android:typeface="serif" />
+           </LinearLayout>
+           
+          <TextView
+              android:id="@+id/lblRegEMNombreInformante"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/lblModuloVerificacionInformante" />
+
+          <EditText
+        	  android:id="@+id/txtRegEMNombreInformante"
+        	  android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:inputType="textCapCharacters|textNoSuggestions" />
+          
+          <TextView
+              android:id="@+id/lblRegEMTipDocInformante"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/lblModuloVerificacionDocInformante" />
+        	   
+          <LinearLayout
+        	  android:layout_width="match_parent"
+        	  android:layout_height="wrap_content" >
+        	   
+        	  <Spinner 
+            	  android:id="@+id/listaRegEMDocInformante"
+            	  android:layout_width="fill_parent"
+            	  android:layout_height="38dp" />
+ 		   </LinearLayout>
+ 				
+        	  <TextView
+        	      android:id="@+id/lblRegEMMostroDoc"
+        	      android:layout_width="fill_parent"
+        	      android:layout_height="wrap_content"
+        	      android:text="@string/lblModuloVerificacionMostroDoc" />
+        	
+           <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+
+        	       <Spinner 
+            	   android:id="@+id/listaRegEMMostroDoc"
+            	   android:layout_width="130dp"
+            	   android:layout_height="38dp" />
+        	       
+        	       <TextView
+        	           android:id="@+id/lblRegEMNroInformante"
+        	           android:layout_width="wrap_content"
+        	           android:layout_height="wrap_content"
+        	           android:text="@string/lblModuloVerificacionNroDoc" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegEMNroInformante"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="number" />
+ 		    </LinearLayout>
+ 		    
+           <TextView
+                android:id="@+id/lblRegEMCargoInformante"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblModuloVerificacionCargoInformante" />
+
+        	       <EditText
+        	       android:id="@+id/txtRegEMCargoInformante"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	       
+        	         <TextView
+        	             android:id="@+id/lblRegEMAreaInformante"
+        	             android:layout_width="fill_parent"
+        	             android:layout_height="wrap_content"
+        	             android:text="@string/lblModuloVerificacionAreaInformante" />
+
+        		   <EditText
+        	       android:id="@+id/txtRegEMAreaInformante"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:ems="10"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+        	
+        	<TextView
+        	    android:id="@+id/lblRegEMFormaAtencion"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:text="@string/lblModuloVerificacionFormaAtencion" />
+        	   
+        	<LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content" >
+        
+        	       <Spinner 
+            	   android:id="@+id/listaRegEMFormaAtencion"
+            	   android:layout_width="150dp"
+            	   android:layout_height="38dp" />
+        	  
+        	  	   <EditText
+        	       android:id="@+id/txtRegEMOtrosFormaAtencion"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:inputType="textCapCharacters|textNoSuggestions" />
+            </LinearLayout>	  
+            
+        	<TextView
+        	       android:id="@+id/lblRegEMCorrespondeEmpresa"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:text="@string/lblModuloVerificacionCorrespondeEmpresa" />
+        	   
+        	       <Spinner 
+            	   android:id="@+id/listaRegEMCorrespondeEmpresa"
+            	   android:layout_width="fill_parent"
+            	   android:layout_height="38dp" />
+        	  
+        			<TextView
+        	   		    android:id="@+id/lblRegEMRubroEmpresa"
+        	   		    android:layout_width="fill_parent"
+        	   		    android:layout_height="wrap_content"
+        	   		    android:text="@string/lblModuloVerificacionRubroEmpresa" />
+        	   
+        	   		<EditText
+        	        android:id="@+id/txtRegEMRubroEmpresa"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+					android:inputType="textCapCharacters|textNoSuggestions" />
+       	    
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	        <TextView
+        	            android:id="@+id/lblRegEMCantidadTrabajadores"
+        	            android:layout_width="200dp"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionCantidadTrabajadores" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegEMCantidadTrabajadores"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	 <TextView
+        	     android:id="@+id/lblRegEMAntiguedadEmpresa"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionAntiguedadEmpresa" />
+        	    
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+    
+        	       	<TextView
+        	       	    android:id="@+id/lblRegEMAnoMesDia"
+        	       	    android:layout_width="wrap_content"
+        	       	    android:layout_height="wrap_content"
+        	       	    android:text="@string/lblModuloVerificacionAnoMesDia" />
+        	        
+        	        <EditText
+        	        android:id="@+id/txtRegEMAno"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	          
+        	        <EditText
+        	        android:id="@+id/txtRegEMMes"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	             	     
+        	        <EditText
+        	        android:id="@+id/txtRegEMDia"
+        	        android:layout_width="54dp"
+        	        android:layout_height="wrap_content"
+        	        android:layout_weight="0.02"
+        	        android:ems="10"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	 <TextView
+        	     android:id="@+id/lblRegEMPropiedadinmueble"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionPropiedadInmueble" />
+        	   
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	
+        	   		<Spinner 
+            	    android:id="@+id/listaRegEMPropiedadInmueble"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	
+        	   		<EditText
+        	        android:id="@+id/txtRegEMOtrosPropiedadInmueble"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	 </LinearLayout>    
+        	 
+        	   <TextView
+        	       android:id="@+id/lblRegEMTipoMoneda"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:text="@string/lblModuloVerificacionTipoMoneda" />
+        	    
+        	 <LinearLayout
+        	      android:layout_width="match_parent"
+        	      android:layout_height="wrap_content" >
+    
+        	   		<Spinner 
+            	    android:id="@+id/listaRegEMTipoMoneda"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+        	   
+        	   		<TextView
+        	   		    android:id="@+id/lblRegEMMontoAlquiler"
+        	   		    android:layout_width="wrap_content"
+        	   		    android:layout_height="wrap_content"
+        	   		    android:text="@string/lblModuloVerificacionMontoAlquiler" />
+        	   		
+    				<EditText
+        	        android:id="@+id/txtRegEMTipoMoneda"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:ems="10"
+        	        android:inputType="number" />
+    		 </LinearLayout>    	  
+    		 
+        	 <TextView
+        	     android:id="@+id/lblRegEMTipoInmueble"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionTipoInmueble" />
+        
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	   		<Spinner 
+            	    android:id="@+id/listaRegEMTipoInmueble"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+       
+        	   		<EditText
+        	        android:id="@+id/txtRegEMOtrosTipoInmueble"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	 </LinearLayout>
+        	 
+        	 <TextView
+        	     android:id="@+id/lblRegEMUbicacionInmueble"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionUbicacionInmueble" />
+        	   
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+
+        	     <Spinner
+        	         android:id="@+id/listaRegEMUbicacionInmueble"
+        	         android:layout_width="150dp"
+        	         android:layout_height="38dp" />
+        	     
+        	   		<EditText
+        	        android:id="@+id/txtRegEMOtrosUbicacionInmueble"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	 </LinearLayout>
+        	 
+        	  <TextView
+        	      android:id="@+id/lblRegEMEstadoinmueble"
+        	      android:layout_width="fill_parent"
+        	      android:layout_height="wrap_content"
+        	      android:text="@string/lblModuloVerificacionEstadoInmueble" />
+        	   
+        	   		<Spinner 
+            	    android:id="@+id/listaRegEMEstadoInmueble"
+            	    android:layout_width="fill_parent"
+            	    android:layout_height="38dp" />
+        	   		
+        	   		<LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	        <TextView
+        	            android:id="@+id/lblRegEMPisosInmueble"
+        	            android:layout_width="200dp"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionPisosInmueble" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegEMPisosInmueble"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	   <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	        <TextView
+        	            android:id="@+id/lblRegEMPisosConjunto"
+        	            android:layout_width="200dp"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionPisoConjunto" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegEMPisosConjunto"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	  
+        	 <TextView
+        	     android:id="@+id/lblRegEMColorinmueble"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionColorInmueble" />
+        	   
+        	   		<EditText
+        	        android:id="@+id/txtRegEMColorInmueble"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	   		
+        	   		<TextView
+        	   		    android:id="@+id/lblRegEMServiciobasico"
+        	   		    android:layout_width="fill_parent"
+        	   		    android:layout_height="wrap_content"
+        	   		    android:text="@string/lblModuloVerificacionServicioBasico" />
+
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+
+        	        <CheckBox
+        	            android:id="@+id/chkRegEMAgua"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionAgua" />
+
+        	        <CheckBox
+        	            android:id="@+id/chkRegEMLuz"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionLuz" />
+
+        	        <CheckBox
+        	            android:id="@+id/chkRegEMDesague"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionDesague" />
+        	 </LinearLayout>
+        	 
+        	 <TextView
+        	     android:id="@+id/lblRegEMTipoBarrio"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionTipoBarrio" />
+        
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	   		<Spinner 
+            	    android:id="@+id/listaRegEMTipoBarrio"
+            	    android:layout_width="150dp"
+            	    android:layout_height="38dp" />
+       
+        	   		<EditText
+        	        android:id="@+id/txtRegEMOtrosTipoBarrio"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	 </LinearLayout>
+        	 
+        	 <TextView
+        	     android:id="@+id/lblRegEMEstadoBarrio"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="wrap_content"
+        	     android:text="@string/lblModuloVerificacionEstadoBarrio" />
+        
+        	 <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	   		<Spinner 
+            	    android:id="@+id/listaRegEMEstadoBarrio"
+            	    android:layout_width="fill_parent"
+            	    android:layout_height="38dp" />
+           	 </LinearLayout>
+        	 
+        	   <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	        <TextView
+        	            android:id="@+id/lblRegEMTelefonoTitular"
+        	            android:layout_width="150dp"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionTelefonoEmpresa" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegEMTelefonoTitular"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	    <LinearLayout
+        	     android:layout_width="match_parent"
+        	     android:layout_height="wrap_content" >
+        	     
+        	        <TextView
+        	            android:id="@+id/lblRegEMNroSuministro"
+        	            android:layout_width="150dp"
+        	            android:layout_height="wrap_content"
+        	            android:text="@string/lblModuloVerificacionRucEmpresa" />
+
+        	   		<EditText
+        	        android:id="@+id/txtRegEMNroSuministro"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="number" />
+        	 </LinearLayout>
+        	 
+        	     <TextView
+        	         android:id="@+id/lblRegEMDireccionCorrecta"
+        	         android:layout_width="fill_parent"
+        	         android:layout_height="wrap_content"
+        	         android:text="@string/lblModuloVerificacionDireccionCorrecta" />
+        	   
+        	   		<EditText
+        	        android:id="@+id/txtRegEMDireccionCorrecta"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	   		
+        	   <TextView
+        	       android:id="@+id/lblRegEMObservaciones"
+        	       android:layout_width="fill_parent"
+        	       android:layout_height="wrap_content"
+        	       android:text="@string/lblModuloVerificacionObservaciones" />
+        	   
+        	   		<EditText
+        	        android:id="@+id/txtRegEMObservaciones"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:inputType="textCapCharacters|textNoSuggestions" />
+        	   		
+        	   		<Button
+        	   		    android:id="@+id/btnRegEMRutaFoto"
+        	   		    android:layout_width="wrap_content"
+        	   		    android:layout_height="wrap_content"
+        	   		    android:layout_gravity="center"
+        	   		    android:layout_marginTop="26dp"
+        	   		    android:background="#FFFFFF"
+        	   		    android:drawableLeft="@drawable/ic_foto"
+        	   		    android:paddingLeft="20dip"
+        	   		    android:paddingRight="20dip"
+        	   		    android:shadowColor="#FF8800"
+        	   		    android:shadowDx="1"
+        	   		    android:shadowDy="2"
+        	   		    android:shadowRadius="1.5"
+        	   		    android:text="@string/lblModuloVerificacionPrimeraFoto"
+        	   		    android:textColor="#4B0082"
+        	   		    android:textStyle="bold"
+        	   		    android:typeface="serif" />
+        	   		
+        	   		<ImageView
+        	        android:id="@+id/imageViewRegEMPrimeraFoto"
+        	        android:layout_width="350dp"
+        	        android:layout_height="420dp"
+        	        android:maxHeight="@dimen/activity_horizontal_margin"
+        	        android:maxWidth="@dimen/activity_horizontal_margin"
+        	        android:layout_gravity="center"
+        	        android:scaleType="fitXY" />
+        	   		
+        	   		<Button
+        	   		    android:id="@+id/btnRegEMRutaFoto2"
+        	   		    android:layout_width="wrap_content"
+        	   		    android:layout_height="wrap_content"
+        	   		    android:layout_gravity="center"
+        	   		    android:layout_marginTop="26dp"
+        	   		    android:background="#FFFFFF"
+        	   		    android:drawableLeft="@drawable/ic_foto"
+        	   		    android:paddingLeft="20dip"
+        	   		    android:paddingRight="20dip"
+        	   		    android:shadowColor="#FF8800"
+        	   		    android:shadowDx="1"
+        	   		    android:shadowDy="2"
+        	   		    android:shadowRadius="1.5"
+        	   		    android:text="@string/lblModuloVerificacionSegundaFoto"
+        	   		    android:textColor="#4B0082"
+        	   		    android:textStyle="bold"
+        	   		    android:typeface="serif" />
+        	   		
+        	   		<ImageView
+        	        android:id="@+id/imageViewRegEMSegundaFoto"
+        	        android:layout_width="350dp"
+        	        android:layout_height="420dp"
+        	        android:maxHeight="@dimen/activity_horizontal_margin"
+        	        android:maxWidth="@dimen/activity_horizontal_margin"
+        	        android:layout_gravity="center"
+        	        android:scaleType="fitXY" />
+
+        	   		<Button
+        	   		    android:id="@+id/btnRegEMGuardar"
+        	   		    android:layout_width="wrap_content"
+        	   		    android:layout_height="wrap_content"
+        	   		    android:layout_gravity="left"
+        	   		    android:layout_marginTop="26dp"
+        	   		    android:background="#FFFFFF"
+        	   		    android:drawableLeft="@drawable/ic_guardar"
+        	   		    android:paddingLeft="20dip"
+        	   		    android:paddingRight="20dip"
+        	   		    android:shadowColor="#FF8800"
+        	   		    android:shadowDx="1"
+        	   		    android:shadowDy="2"
+        	   		    android:shadowRadius="1.5"
+        	   		    android:text="@string/lblModuloVerificacionGuardar"
+        	   		    android:textColor="#4B0082"
+        	   		    android:textStyle="bold"
+        	   		    android:typeface="serif" />
+        	   
+        	  		<Button
+        	  		    android:id="@+id/btnRegEMRegresa"
+        	  		    android:layout_width="wrap_content"
+        	  		    android:layout_height="wrap_content"
+        	  		    android:layout_gravity="left"
+        	  		    android:layout_marginTop="26dp"
+        	  		    android:background="#FFFFFF"
+        	  		    android:drawableLeft="@drawable/ic_salir5"
+        	  		    android:paddingLeft="20dip"
+        	  		    android:paddingRight="20dip"
+        	  		    android:shadowColor="#FF8800"
+        	  		    android:shadowDx="1"
+        	  		    android:shadowDy="2"
+        	  		    android:shadowRadius="1.5"
+        	  		    android:text="@string/lblModuloVerificacionRegresar"
+        	  		    android:textColor="#4B0082"
+        	  		    android:textStyle="bold"
+        	  		    android:typeface="serif" />
+	</LinearLayout>
+</ScrollView>

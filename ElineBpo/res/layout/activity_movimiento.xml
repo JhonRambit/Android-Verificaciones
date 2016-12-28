@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgTitulo"
+            android:layout_width="204dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="0.59"
+            android:src="@drawable/logo_eline" />
+
+        <TextView
+            android:id="@+id/lblTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/MenuTitulo"
+            android:textAlignment="center"
+            android:textColor="#4B0082"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+          	        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+             <TextView
+            android:id="@+id/lblUsuNombre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+             
+            <TextView
+            android:id="@+id/lblUsuApellidoPaterno"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+              
+            <TextView
+            android:id="@+id/lblUsuApellidoMaterno"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="244dp"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnfoto"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_camara"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:shadowColor="#FF8800"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1.5"
+                android:text="@string/MenuFoto"
+                android:textColor="#4B0082"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnverificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_verificar"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:shadowColor="#FF8800"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1.5"
+                android:text="@string/MenuVerificacion"
+                android:textColor="#4B0082"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="292dp"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btncobranza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_weight="0.61"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_cobranza"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:shadowColor="#FF8800"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1.5"
+                android:text="@string/MenuCobranza"
+                android:textColor="#4B0082"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+        
+        <TextView
+        android:id="@+id/lblUsuarioMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+        </LinearLayout>
+</ScrollView>
